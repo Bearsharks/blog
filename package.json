@@ -1,12 +1,10 @@
 {
   "name": "gatsby-starter-blog",
+  "homepage": "http://bearsharks.github.io/blog",
   "private": true,
   "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
   "dependencies": {
     "gatsby": "^4.12.1",
     "gatsby-plugin-feed": "^4.12.1",
@@ -35,15 +33,10 @@
   "devDependencies": {
     "prettier": "^2.6.2"
   },
-  "homepage": "http://bearsharks.github.io/blog",
   "keywords": [
     "gatsby"
   ],
   "license": "0BSD",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 12 May 2022 02:59:49 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[html에 css 연동방법 link embed inline 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 12 May 2022 03:47:20 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[html에 css 연동방법 link embed inline 
 embed나 inline…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/CSS정리/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/CSS정리/</guid><content:encoded>&lt;h1&gt;html에 css 연동방법&lt;/h1&gt;
 &lt;h2&gt;link&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -247,8 +247,8 @@ element {
     /*현재 아이템을 포함하는 셀에 대한 아이템의 정렬방식*/
     align-self: stretch;
     justify-self: stretch;
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[head 태그 브라우저에 포시되는 내용이 아닌것들을 담는다. 주로 메타데이터와 각종 링크들이 담긴다. meta 태그 문서의 메타정보가 담는다. 메타태그는 4가지 attr를 가진다. charset은 문자의 인코딩을 지정한다. http-equiv…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/HTML정리/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/HTML정리/</guid><content:encoded>&lt;h1&gt;head 태그&lt;/h1&gt;
-&lt;p&gt;브라우저에 포시되는 내용이 아닌것들을 담는다. 주로 메타데이터와 각종 링크들이 담긴다.&lt;/p&gt;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[head 태그 브라우저에 표시되지 않는 사항이 주로 head 태그에 포함된다. 주로 메타데이터와 각종 링크들이 담긴다. meta 태그 문서의 메타정보가 담는다. 메타태그는 4가지 attr를 가진다. charset은 문자의 인코딩을 지정한다. http…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/HTML정리/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/HTML정리/</guid><content:encoded>&lt;h1&gt;head 태그&lt;/h1&gt;
+&lt;p&gt;브라우저에 표시되지 않는 사항이 주로 head 태그에 포함된다. 주로 메타데이터와 각종 링크들이 담긴다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;head&gt;
   &amp;lt;meta charset=&quot;UTF-8&quot;&gt;
   &amp;lt;meta name=&quot;description&quot; content=&quot;오늘의 경제 신문입니다.&quot;&gt;

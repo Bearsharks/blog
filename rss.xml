@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 11 May 2022 08:52:44 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[html에 css 연동방법 link embed inline 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 12 May 2022 02:59:49 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[html에 css 연동방법 link embed inline 
 embed나 inline…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/CSS정리/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/CSS정리/</guid><content:encoded>&lt;h1&gt;html에 css 연동방법&lt;/h1&gt;
 &lt;h2&gt;link&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -247,7 +247,199 @@ element {
     /*현재 아이템을 포함하는 셀에 대한 아이템의 정렬방식*/
     align-self: stretch;
     justify-self: stretch;
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[head 태그 브라우저에 포시되는 내용이 아닌것들을 담는다. 주로 메타데이터와 각종 링크들이 담긴다. meta 태그 문서의 메타정보가 담는다. 메타태그는 4가지 attr를 가진다. charset은 문자의 인코딩을 지정한다. http-equiv…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/HTML정리/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/HTML정리/</guid><content:encoded>&lt;h1&gt;head 태그&lt;/h1&gt;
+&lt;p&gt;브라우저에 포시되는 내용이 아닌것들을 담는다. 주로 메타데이터와 각종 링크들이 담긴다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;head&gt;
+  &amp;lt;meta charset=&quot;UTF-8&quot;&gt;
+  &amp;lt;meta name=&quot;description&quot; content=&quot;오늘의 경제 신문입니다.&quot;&gt;
+  &amp;lt;meta name=&quot;keywords&quot; content=&quot;주식, 암호화폐, 경제, 투자&quot;&gt;
+  &amp;lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &amp;lt;meta name=&quot;viewport&quot;
+        content=&quot;width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;
+  &amp;lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+  &amp;lt;link rel=&quot;stylesheet&quot; href=&quot;index.css&quot;&gt;
+  &amp;lt;title&gt;Document&amp;lt;/title&gt;
+&amp;lt;/head&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;meta 태그&lt;/h2&gt;
+&lt;p&gt;문서의 메타정보가 담는다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;meta http-equiv=&quot;&quot; name=&quot;&quot; content=&quot;&quot; charset=&quot;&quot;/&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;메타태그는 4가지 attr를 가진다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;charset은 문자의 인코딩을 지정한다.&lt;/li&gt;
+&lt;li&gt;http-equiv은 HTTP 응답 헤더를 시뮬레이션하는데 사용한다.&lt;/li&gt;
+&lt;li&gt;name은 author description generator keywords viewport Robot 등을 속성으로 가질 수 있다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;charset도 아니고 http-equiv도 아니지만 meta에 포함되어야 하는 것들이 모여있다.
+4. content 에서 http-equiv name에서 지정한 속성에 관련된 내용을 입력하게된다.&lt;/p&gt;
+&lt;h1&gt;시멘틱 태그&lt;/h1&gt;
+&lt;p&gt;태그의 내용에 의미를 부여하는 태그 컨텐츠의 내용이 무엇인지를 설명한다.
+검색엔진은 이를 바탕으로 웹페이지를 파악하고 시멘틱태그를 통해 각 컨텐츠의 의미를 파악한다.&lt;/p&gt;
+&lt;h2&gt;시멘틱 태그의 종류&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;header : 헤더&lt;/li&gt;
+&lt;li&gt;nav : 네비게이션&lt;/li&gt;
+&lt;li&gt;aisde : 사이드에 위치하는 공간&lt;/li&gt;
+&lt;li&gt;section : 본문의 여러 내용을 포함하는 공간&lt;/li&gt;
+&lt;li&gt;article : 본문의 주 내용이 들어가는 공간&lt;/li&gt;
+&lt;li&gt;footer : 푸터&lt;/li&gt;
+&lt;li&gt;strong : 중요한것 볼드로 표시&lt;/li&gt;
+&lt;li&gt;em : 중요한것 기울임으로 표시&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/blog/static/d7befa1c9b73b73136ea075535546dd2/2cefc/img_2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 68.35443037974683%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA7klEQVQ4y42U24rCMBCGvzvBU12EatMurGdUPKLu5bL7/g+1tPwtQ6yJFx8kf+aQmUkLkEXIgU+Rv2FfGb3CAWvgW6ykhXwYBfgAErNPpIV8KgOLdR61nHVafCxPV/4CZsBca78F/VjJtqFTYAccgQOwlWbPe95+IpqhOI+phzODyBTQaT3X0BZGq4STblXfzFLrpc0S6JokG2CvSpqApXgFzuIH+BO/0i6yWZuAmUpN/ZLL6Dc5lDw8av2m5L3YUCYmozPNzlp6mOrZjAMwBAYB+iqzq/UwAkWAXH27q4/1p1e8+w5f/RxmoojZ/wNB/R25P9vkKwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img_2.png&quot;
+        title=&quot;img_2.png&quot;
+        src=&quot;/blog/static/d7befa1c9b73b73136ea075535546dd2/f058b/img_2.png&quot;
+        srcset=&quot;/blog/static/d7befa1c9b73b73136ea075535546dd2/c26ae/img_2.png 158w,
+/blog/static/d7befa1c9b73b73136ea075535546dd2/6bdcf/img_2.png 315w,
+/blog/static/d7befa1c9b73b73136ea075535546dd2/f058b/img_2.png 630w,
+/blog/static/d7befa1c9b73b73136ea075535546dd2/40601/img_2.png 945w,
+/blog/static/d7befa1c9b73b73136ea075535546dd2/78612/img_2.png 1260w,
+/blog/static/d7befa1c9b73b73136ea075535546dd2/2cefc/img_2.png 1400w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1&gt;하이퍼링크&lt;/h1&gt;
+&lt;p&gt;웹문서에서 동영상 음악 사진 글 등의 자원의 특정위치를 지정하고 그 자원의 위치로 이동시켜주는 링크를 하이퍼링크라고 한다.&lt;/p&gt;
+&lt;p&gt;주로 a태그를 사용한다.&lt;/p&gt;
+&lt;h2&gt;a 태그&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;a href=&quot;http://www.google.com&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Visit google.com!&amp;lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;href attr&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;절대 URL&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.example.com/default.html&quot;&gt;http://www.example.com/default.html&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;상대 URL&lt;/td&gt;
+&lt;td&gt;html/default.html&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;fragment identifier&lt;/td&gt;
+&lt;td&gt;#top&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;메일&lt;/td&gt;
+&lt;td&gt;mailto:&lt;a href=&quot;mailto:example@mail.com&quot;&gt;example@mail.com&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;script&lt;/td&gt;
+&lt;td&gt;javascript:alert(‘Hello’);&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1&gt;테이블&lt;/h1&gt;
+&lt;h2&gt;테이블을 구성하는 태그 목록&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;tag&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;table&lt;/td&gt;
+&lt;td&gt;표를 감싸는 태그&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;tr&lt;/td&gt;
+&lt;td&gt;표 내부의 행 (table row)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;th&lt;/td&gt;
+&lt;td&gt;행 내부의 제목 셀 (table heading)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;td&lt;/td&gt;
+&lt;td&gt;행 내부의 일반 셀 (table data)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;attr&lt;/h2&gt;
+&lt;p&gt;th td는(셀은) 점유하는 행수 열수인 rowspan과 colspan을 attr로 갖는다. 지정하는 수만큼 셀이 점유하는 크기가 늘어난다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;예)
+  &amp;lt;table&gt;
+    &amp;lt;tr&gt;
+      &amp;lt;th&gt;이름&amp;lt;/th&gt;
+      &amp;lt;th colspan=&quot;2&quot;&gt;주소&amp;lt;/th&gt;
+    &amp;lt;/tr&gt;
+    &amp;lt;tr&gt;
+      &amp;lt;td&gt;홍길동&amp;lt;/td&gt;
+      &amp;lt;td&gt;서울시 관악구&amp;lt;/td&gt;
+      &amp;lt;td&gt;OO시 OO구/td&gt;
+    &amp;lt;/tr&gt;
+  &amp;lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;멀티미디어 태그&lt;/h1&gt;
+&lt;h2&gt;img 태그&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;img src=&quot;assets/images/abc.jpg&quot; alt=&quot;abc width=&quot;100&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;alt는 그림을 가져올수 없을때 표시되는 텍스트&lt;/p&gt;
+&lt;h2&gt;audio&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;audio src=&quot;assets/audio/abc.mp3&quot; controls preload autoplay loop&gt;&amp;lt;/audio&gt;
+preload는 재생전 전부 불러올지 여부를 결정한다.
+&amp;lt;audio controls&gt;
+  &amp;lt;source src=&quot;assets/audio/abc.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+  &amp;lt;source src=&quot;assets/audio/abc.ogg&quot; type=&quot;audio/ogg&quot;&gt;
+&amp;lt;/audio&gt;
+여러가지 소스를 제공할 수도 있다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;video&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;video width=&quot;640&quot; height=&quot;360&quot; poster height&gt;
+  &amp;lt;source src=&quot;assets/video/wildlife.mp4&quot; type=&quot;video/mp4&quot;&gt;
+  &amp;lt;source src=&quot;assets/video/wildlife.webm&quot; type=&quot;video/webm&quot;&gt;
+&amp;lt;/video&gt;
+audio태그와 attr가 비슷하다. poster attr는 준비중 표시할 이미지, height로 높이 지정가능&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;form&lt;/h1&gt;
+&lt;p&gt;서버로 데이터를 보낼때 주로사용하는 태그&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;form action=&quot;url&quot; method=&quot;get이나 post&quot;&gt;
+  아이디: &amp;lt;input type=&quot;text&quot; name=&quot;id&quot; value=&quot;abcabc&quot;&gt;&amp;lt;br&gt;
+  비밀번호: &amp;lt;input type=&quot;password&quot; name=&quot;password&quot; value=&quot;test123&quot;&gt;&amp;lt;br&gt;
+  &amp;lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&amp;lt;/form&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;input&lt;/h2&gt;
+&lt;p&gt;타입의 종류는
+checkbox color, date, email, file, hidden, month, number, password, radio, range, submit, text 등이 있다.&lt;/p&gt;
+&lt;h2&gt;select textarea button&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;select name=&quot;cars1&quot;&gt;
+  &amp;lt;option value=&quot;volvo&quot; selected&gt;Volvo&amp;lt;/option&gt;
+  &amp;lt;option value=&quot;saab&quot; disabled&gt;Saab&amp;lt;/option&gt;
+  &amp;lt;option value=&quot;fiat&quot;&gt;Fiat&amp;lt;/option&gt;
+  &amp;lt;option value=&quot;audi&quot;&gt;Audi&amp;lt;/option&gt;
+&amp;lt;/select&gt;
+&amp;lt;textarea name=&quot;message&quot; rows=&quot;10&quot; cols=&quot;30&quot;&gt;Write something here&amp;lt;/textarea&gt;
+&amp;lt;button type=&quot;button&quot; onclick=&quot;&quot;&gt;Click Me!&amp;lt;/button&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;fieldset legend&lt;/h2&gt;
+&lt;p&gt;연관있는 입력값 끼리 묶어줄때 fieldset을 사용하고 legend는 그 그룹의 이름을 정의한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;fieldset&gt;
+  &amp;lt;legend&gt;Login&amp;lt;/legend&gt;
+  Username &amp;lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;
+  Password &amp;lt;input type=&quot;text&quot; name=&quot;password&quot;&gt;
+&amp;lt;/fieldset&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named

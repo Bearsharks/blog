@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 17 May 2022 07:10:31 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[html에 css 연동방법 link embed inline 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 17 May 2022 07:33:38 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[html에 css 연동방법 link embed inline 
 embed나 inline…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/CSS정리/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/CSS정리/</guid><content:encoded>&lt;h1&gt;html에 css 연동방법&lt;/h1&gt;
 &lt;h2&gt;link&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -447,8 +447,8 @@ checkbox color, date, email, file, hidden, month, number, password, radio, range
 &lt;h2&gt;전역프로퍼티&lt;/h2&gt;
 &lt;p&gt;window의 프로퍼티 중 Infinity, NaN, undefined이 있는데
 Infinity는 어떤 숫자보다 큰 값이고, NaN는 숫자가 아님을, undefined는 원시 값 undefined를 가진다.&lt;/p&gt;
-&lt;h3&gt;매소드&lt;/h3&gt;
-&lt;p&gt;window의 매소드를 전역함수라고 부른다. 다음과 같은 매소드들이 있다.&lt;/p&gt;
+&lt;h3&gt;메서드&lt;/h3&gt;
+&lt;p&gt;window의 메서드를 전역함수라고 부른다. 다음과 같은 메서드들이 있다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;eval() code를 문자열로 전달하면 그 코드를 실행하고 표현식을 전달하면 표현식을 출력한다.&lt;/li&gt;
 &lt;li&gt;isFinite() 인자로 전달한 것이 유한하면 참 아니면 거짓을 리턴한다.&lt;/li&gt;
@@ -526,6 +526,22 @@ a += 1 // 여기서는 a라는 변수의 원시값이 33이 된 것으로
   // ...
 }()); 
 //위와 같이 사용한다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;this와 apply/call/bind&lt;/h2&gt;
+&lt;p&gt;this는 호출대상을 의미한다. 매서드의 this는 해당 매서드를 가진 객체가 된다.&lt;/p&gt;
+&lt;h3&gt;주의할점&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;내부함수에서는 그 함수를 실행하는 대상이 전역객체이기 때문에 전역객체가 this가 된다. 콜백함수 역시 마친가지다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;this를 변경하고 싶다면  apply, call, bind등의 함수를 사용한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;apply call&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;함수의 기본 메서드로 첫번째 인자로 전달하는 객체를 해당 함수의 this로 하여 실행시킨다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;f.apply(bar, [인수 배열]) f.call(bar, 인수1, 인수2, 인수3…);&lt;/li&gt;
+&lt;li&gt;bind&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;var f1 = f.bind(a); this를 a로 바인드시킨 함수를 반환한다.&lt;/p&gt;
 &lt;h1&gt;호이스팅&lt;/h1&gt;
 &lt;p&gt;함수 호이스팅은 함수 선언방법에 따라 다르게 동작하는것처럼 보이는데 다른 호이스팅과 차별하여 생각하기보다는
 함수 역시 객체이므로 변수와 동일하게 생각한다. 다만 변수에 할당하는 선언방법을 사용한다면
@@ -536,6 +552,7 @@ a += 1 // 여기서는 a라는 변수의 원시값이 33이 된 것으로
 &lt;p&gt;내부함수가 더 오래 생존 할때 브&lt;/p&gt;
 &lt;h1&gt;프로토타입과 클래스, 객체&lt;/h1&gt;
 &lt;p&gt;자바스크립트의 타입은 원시값과 객체로 나눌 수 있다.&lt;/p&gt;
+&lt;h2&gt;생성자 함수&lt;/h2&gt;
 &lt;h1&gt;브라우저의 랜더링 과정&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;html, css, javascript 등 파싱 대상이 되는 자원들은 브라우저의 파서가 파싱한다.&lt;/li&gt;

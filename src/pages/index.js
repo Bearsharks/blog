@@ -1,19 +1,31 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
+import styled from '@emotion/styled'
+import GlobalStyle from '../components/common/GlobalStyle'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import CategoryList from '../components/main/CategoryList'
+import './index.css';
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`
+
+const CATEGORY_LIST = {
+  All: 6,
+  Web: 3,
+  Etc: 3,
+}
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
-
+  console.log(posts);
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
         <Seo title="All posts" />
-        <Bio />
         <p>
           No blog posts found. Add markdown posts to "content/blog" (or the
           directory you specified for the "gatsby-source-filesystem" plugin in
@@ -23,30 +35,39 @@ const BlogIndex = ({ data, location }) => {
     )
   }
 
+  const curFilter = location.href.split("category=")[1];
+  const category = curFilter ? curFilter : "All";
+  const filterFunc = category === 'All' ? ()=>true : (post)=>post.frontmatter.description === category;
+
   return (
-    <Layout location={location} title={siteTitle}>
+    <Container>
+      <GlobalStyle />
+      <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
-      <Bio />
-      <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
+
+      <CategoryList categoryList={CATEGORY_LIST} />
+      <ol style={{ listStyle: `none` }} className="post-list">
+      
+        {posts.filter(filterFunc).map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
-            <li key={post.fields.slug}>
+            <li key={post.fields.slug} className="post-element">
+              <Link to={post.fields.slug} itemProp="url">
               <article
-                className="post-list-item"
+                className="item"
                 itemScope
                 itemType="http://schema.org/Article"
               >
-                <header>
+                <header className="item__header">
                   <h2>
-                    <Link to={post.fields.slug} itemProp="url">
+                    
                       <span itemProp="headline">{title}</span>
-                    </Link>
+                      
                   </h2>
                   <small>{post.frontmatter.date}</small>
                 </header>
-                <section>
+                <section className="item__section">
                   <p
                     dangerouslySetInnerHTML={{
                       __html: post.frontmatter.description || post.excerpt,
@@ -55,11 +76,14 @@ const BlogIndex = ({ data, location }) => {
                   />
                 </section>
               </article>
+              </Link>
             </li>
           )
         })}
       </ol>
     </Layout>
+    </Container>
+    
   )
 }
 

@@ -239,7 +239,7 @@ a:focus {
 }
 
 /* Custom classes */
-
+/* 
 .global-wrapper {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
@@ -248,7 +248,7 @@ a:focus {
 
 .global-wrapper[data-is-root-path="true"] .bio {
   margin-bottom: var(--spacing-20);
-}
+} */
 
 .global-header {
   margin-bottom: var(--spacing-12);

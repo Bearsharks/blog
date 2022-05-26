@@ -13,9 +13,9 @@ const Container = styled.div`
 `
 
 const CATEGORY_LIST = {
-  All: 7,
+  All: 8,
   Web: 4,
-  Etc: 3,
+  Etc: 4,
 }
 
 const BlogIndex = ({ data, location }) => {

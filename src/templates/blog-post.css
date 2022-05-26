@@ -1,6 +1,11 @@
 .blog-post{
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 1000px;
+  margin:20px auto;
+  padding:30px;
+  border-radius: 3px;
+  background-color: var(--whity);
+  color: black
+  ;
 }
 .blog-post-nav{
   max-width: 900px;

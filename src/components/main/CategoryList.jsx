@@ -5,8 +5,6 @@ import { Link, graphql } from "gatsby"
 const CategoryListWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 768px;
-  margin: 20px
 `
 const CategoryItem = styled(({ active, ...props }) => (
     <Link {...props} />

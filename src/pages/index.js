@@ -13,8 +13,8 @@ const Container = styled.div`
 `
 
 const CATEGORY_LIST = {
-  All: 6,
-  Web: 3,
+  All: 7,
+  Web: 4,
   Etc: 3,
 }
 

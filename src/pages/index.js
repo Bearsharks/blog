@@ -35,7 +35,7 @@ const BlogIndex = ({ data, location }) => {
     )
   }
 
-  const curFilter = location.href.split("category=")[1];
+  const curFilter = window.location.href.split("category=")[1];
   const category = curFilter ? curFilter : "All";
   const filterFunc = category === 'All' ? ()=>true : (post)=>post.frontmatter.tag === category;
 

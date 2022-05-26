@@ -1,6 +1,8 @@
 ---
 title: css정리
-description: Web
+date: "2022-05-23T22:40:32.169Z"
+description: float를 지정하면 해당 요소는 부모 요소가 높이를 파악하지 않는다. float가 적용된 자식요소의 높이가 높다면 부모요소 밖으로 표시되어 다른 요소들을 가려버리는 문제가 발생한다. 그렇기 때문에 clear속성을 이용한다.
+tag: Web
 ---
 
 # html에 css 연동방법

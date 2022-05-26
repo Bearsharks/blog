@@ -37,7 +37,7 @@ const BlogIndex = ({ data, location }) => {
 
   const curFilter = location.href.split("category=")[1];
   const category = curFilter ? curFilter : "All";
-  const filterFunc = category === 'All' ? ()=>true : (post)=>post.frontmatter.description === category;
+  const filterFunc = category === 'All' ? ()=>true : (post)=>post.frontmatter.tag === category;
 
   return (
     <Container>
@@ -60,12 +60,10 @@ const BlogIndex = ({ data, location }) => {
                 itemType="http://schema.org/Article"
               >
                 <header className="item__header">
-                  <h2>
-                    
-                      <span itemProp="headline">{title}</span>
-                      
+                  <h2 className="headline">                    
+                      <span itemProp="headline">{title}</span>                      
                   </h2>
-                  <small>{post.frontmatter.date}</small>
+                  <small className="date">{post.frontmatter.date}</small>
                 </header>
                 <section className="item__section">
                   <p
@@ -106,6 +104,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          tag
         }
       }
     }

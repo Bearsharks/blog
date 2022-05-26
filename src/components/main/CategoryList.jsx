@@ -14,9 +14,12 @@ const CategoryItem = styled(({ active, ...props }) => (
     font-size: 18px;
     font-weight: ${({ active }) => (active ? '800' : '400')};
     cursor: pointer;
-  
+    color : #fffffa;
     &:last-of-type {
       margin-right: 0;
+    }
+    &:hover{
+      color : #7d95bd;
     }
   `
 const CategoryList = function ({

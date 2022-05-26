@@ -1,7 +1,8 @@
 ---
 title: My Second Post!
 date: "2015-05-06T23:46:37.121Z"
-description: Etc
+description: Wow! I love blogging so much already.
+tag: Etc
 ---
 
 Wow! I love blogging so much already.

@@ -16,7 +16,10 @@ const HeaderWrapper = styled.header`
 const Header = function ({children}) {
   return (
     <HeaderWrapper>
-      {children}
+      <div className="header">
+        {children}
+      </div>
+      
     </HeaderWrapper>
   )
 }

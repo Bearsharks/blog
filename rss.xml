@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 26 May 2022 13:04:07 GMT</lastBuildDate><item><title><![CDATA[ES6 정리]]></title><description><![CDATA[var, const, let var는 선언한 함수의 내에서 유효하다. 함수 안에 함수가 있었다면 내부 함수에서는 자신을 선언된 함수의 var를 볼 수 있고 depth가 얼마나 되든지 이는 동일하다. const와 let…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/ES6/ES6 정리/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/ES6/ES6 정리/</guid><pubDate>Thu, 26 May 2022 22:40:32 GMT</pubDate><content:encoded>&lt;h1&gt;var, const, let&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 02 Jun 2022 13:50:50 GMT</lastBuildDate><item><title><![CDATA[ES6 정리]]></title><description><![CDATA[var, const, let var는 선언한 함수의 내에서 유효하다. 함수 안에 함수가 있었다면 내부 함수에서는 자신을 선언된 함수의 var를 볼 수 있고 depth가 얼마나 되든지 이는 동일하다. const와 let…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/ES6/ES6 정리/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/ES6/ES6 정리/</guid><pubDate>Thu, 26 May 2022 22:40:32 GMT</pubDate><content:encoded>&lt;h1&gt;var, const, let&lt;/h1&gt;
 &lt;p&gt;var는 선언한 함수의 내에서 유효하다. 함수 안에 함수가 있었다면 내부 함수에서는 자신을 선언된 함수의 var를 볼 수 있고 depth가 얼마나 되든지 이는 동일하다.&lt;/p&gt;
 &lt;p&gt;const와 let은 블록레벨 스코프가 적용된다. 그리고 var와 달리 선언과 초기화가 동시에 진행되지 않는다.
 다시 말해 let이 있는 코드가 있다면 해당 코드가 실행되기 전에 변수를 해당 스코프에 등록하기는 하지만 초기화는 되지 않아서
@@ -740,7 +740,54 @@ var stu = new Student(&apos;kim&apos;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;li&gt;레이아웃 트리 를 보고 페인트 트리를 구성한다.(z-order, 자식요소 등을 고려해 그려야할 순서를 판단)&lt;/li&gt;
 &lt;li&gt;각 paint operation을 수행하면서 layer생성조건이 부합되면 새로운 layer를 만들어낸다.&lt;/li&gt;
 &lt;li&gt;각 layer들은 레스터화(픽셀단위로 이미지화) 되어있고, 화면을 움직이면 브라우저는 그에 맞춰 레이어를 움직여가면서 새로운 화면을 그린다.&lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Test]]></title><description><![CDATA[1. 최초 콘텐츠 페인트시간FCP 가중치 10% 처음에 콘텐츠가 표시되는 시간 2. 속도 지수 가중치 10% 시각적으로 표시되는 속도
+주로 스크립트를 통해서 dom을 조작하거나 데이터를 받아오면서 화면을 순차적으로 표시하게 되는데 그 속도를 말함…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/배워볼래2/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/배워볼래2/</guid><pubDate>Wed, 29 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. &lt;a href=&quot;https://web.dev/fcp/&quot;&gt;최초 콘텐츠 페인트시간FCP&lt;/a&gt; 가중치 10%&lt;/h2&gt;
+&lt;p&gt;처음에 콘텐츠가 표시되는 시간&lt;/p&gt;
+&lt;h2&gt;2. &lt;a href=&quot;https://web.dev/speed-index/&quot;&gt;속도 지수&lt;/a&gt; 가중치 10%&lt;/h2&gt;
+&lt;p&gt;시각적으로 표시되는 속도
+주로 스크립트를 통해서 dom을 조작하거나 데이터를 받아오면서 화면을 순차적으로 표시하게 되는데 그 속도를 말함&lt;/p&gt;
+&lt;h2&gt;3. &lt;a href=&quot;https://web.dev/i18n/ko/lcp/&quot;&gt;가장 큰 콘텐츠가 포함된 페인트(Largest Contentful Paint)&lt;/a&gt; 가중치 25%&lt;/h2&gt;
+&lt;p&gt;이미지 비디오 배경이미지가 있는 요소 아니면 그냥 블록요소 중
+뷰포트 내에서 보여지는 영역이 가장 큰 요소가 언제 랜더링되는지를 말합니다.&lt;/p&gt;
+&lt;h2&gt;4. &lt;a href=&quot;https://web.dev/i18n/ko/interactive/&quot;&gt;상호 작용까지의 시간&lt;/a&gt; 가중치 10%&lt;/h2&gt;
+&lt;p&gt;페이지가 완전히 상호작용 가능할때까지의 시간&lt;/p&gt;
+&lt;p&gt;5초간 긴작업(50ms 이상의 작업)이 없다면 안정적 상호작용이 가능하다고 본다.&lt;/p&gt;
+&lt;h2&gt;5. &lt;a href=&quot;https://web.dev/i18n/ko/tbt/&quot;&gt;총 차단 시간&lt;/a&gt; 가중치 30%&lt;/h2&gt;
+&lt;p&gt;사용자 입력으로 부터 페이지가 응답하지 않도록 차단된 시간, 다시 말하면 렉걸린 시간
+여러 긴 작업(50ms 이상)이 있다면, 각 작업의 총 수행시간에서 50ms를 뺀 것을 모두 더한 값&lt;/p&gt;
+&lt;h2&gt;6. &lt;a href=&quot;https://web.dev/i18n/ko/cls/&quot;&gt;누적 레이아웃 이동&lt;/a&gt; 가중치 15%&lt;/h2&gt;
+&lt;p&gt;갑작스러운 화면변화는 사용자의 예측을 빗나가게 하기때문에 사용자경험을 저해합니다.&lt;br&gt;
+예를들면 로그인 버튼을 눌렀는데 그 사이에 광고가 갑자기 켜지면서 광고버튼을 클릭해서 다른페이지로 이동해버린다면 굉장히 불쾌할 것&lt;/p&gt;
+&lt;h2&gt;PRPL패턴, 선택과 집중&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;preload - 미리 로드&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;link rel=&quot;preload&quot; as=&quot;style&quot; href=&quot;css/style.css&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Render 초기화면을 가능한 빨리 랜더링 할 것&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;HTML에 직접 인라인으로 적용하는 방법도 고려 할 수 있다.
+&amp;lt;script&gt; ...중요한 스크립트 &amp;lt;/script&gt;
+&amp;lt;style&gt; ...중요한 css &amp;lt;/style&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;./%EC%B2%AB%ED%8E%98%EC%9D%B4%EC%A7%80.webp&quot; alt=&quot;첫페이지&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;Pre-Cache미리 캐시함&lt;br&gt;
+서비스 워커를 사용하여 자주 쓰거나 곧 쓸 자원들을 캐시를 통해 미리 가져오기.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lazy load 혹은 나머지는 지연로드&lt;br&gt;
+용호님…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;&lt;a href=&quot;https://developer.chrome.com/docs/workbox/&quot;&gt;Cache Storage API + Service Workers&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;./%EC%84%9C%EB%B9%84%EC%8A%A4%20%EC%9B%8C%EC%BB%A4.webp&quot; alt=&quot;서비스워커&quot;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;스크립트로 서비스워커를 실행&lt;/li&gt;
+&lt;li&gt;fetch 요청!&lt;/li&gt;
+&lt;li&gt;서비스워커에서 가로채서 캐시작업 수행한다. 있으면 주고 없으면 받아서 주고&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;workbox라는 서비스워커 라이브러리가 가장 유명하다고 한다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
